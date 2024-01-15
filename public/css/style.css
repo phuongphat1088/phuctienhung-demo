@@ -8,12 +8,37 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #131313;
+  color: #fff;
+}
+
+.site-logo {
+  width: 500px;
+  margin-bottom: 30px;
 }
 
 .site-title {
   display: inline-block;
   margin: 0;
   padding: 0;
+  letter-spacing: 5px;
+  font-weight: bold;
+  background-image: linear-gradient(to right,
+      #462523 0,
+      #cb9b51 22%,
+      #f6e27a 45%,
+      #f6f2c0 50%,
+      #f6e27a 55%,
+      #cb9b51 78%,
+      #462523 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+.site-description {
+  font-weight: lighter;
+  margin: 5px;
 }
