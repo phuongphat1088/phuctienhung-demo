@@ -68,8 +68,11 @@ footer {
     width: 80%;
   }
 
-  .site-title, .site-description {
-    width: 100%;
+  .site-title {
     font-size: 25px;
+  }
+
+  .site-description {
+    font-size: 20px;
   }
 }
