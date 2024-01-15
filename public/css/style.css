@@ -15,13 +15,19 @@ body {
   color: #fff;
 }
 
+.site-logo-link {
+  width: 40%;
+}
+
 .site-logo {
-  width: 500px;
+  width: 100%;
   margin-bottom: 30px;
 }
 
 .site-title {
   display: inline-block;
+  width: 100%;
+  text-align: center;
   margin: 0;
   padding: 0;
   letter-spacing: 6px;
@@ -39,6 +45,20 @@ body {
 }
 
 .site-description {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
   font-weight: lighter;
   margin: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .site-logo-link {
+    width: 80%;
+  }
+
+  .site-title, .site-description {
+    width: 100%;
+    font-size: 25px;
+  }
 }
