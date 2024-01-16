@@ -53,10 +53,10 @@ body {
 }
 
 footer {
-  position: absolute;
+  position: fixed;
+  bottom: 10px;
   display: block;
   width: 100%;
-  bottom: 10px;
   text-transform: uppercase;
   font-weight: lighter;
   text-align: center;
