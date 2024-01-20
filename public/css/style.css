@@ -15,6 +15,11 @@ body {
   color: #fff;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .site-logo-link {
   width: 40%;
 }
@@ -52,6 +57,45 @@ body {
   margin: 5px;
 }
 
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  width: fit-content;
+  font-weight: lighter;
+  margin-top: 20px;  
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  opacity: .5;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.contact:hover {
+  background-color: rgba(203, 155, 81, 0.5);
+  opacity: 1;
+}
+
+.contact.phone {
+  margin-right: 15px;
+}
+
+.contact-info i {
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  color: #131313;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  font-size: 12px;
+  opacity: 1;
+}
+
 footer {
   position: fixed;
   bottom: 10px;
@@ -74,5 +118,11 @@ footer {
 
   .site-description {
     font-size: 20px;
+  }
+
+  .contact-info {
+    width: 70%;
+    flex-direction: column;
+    align-items: center;    
   }
 }
