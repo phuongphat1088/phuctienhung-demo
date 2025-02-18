@@ -21,7 +21,7 @@ a {
 }
 
 .site-logo-link {
-  width: 40%;
+  width: 30%;
 }
 
 .site-logo {
@@ -36,17 +36,27 @@ a {
   margin: 0;
   padding: 0;
   letter-spacing: 6px;
-  font-weight: bold;
-  background-image: linear-gradient(to right,
+  font-weight: 800;
+  background: linear-gradient(to right,
       #462523 0,
       #cb9b51 22%,
-      #f6e27a 45%,
+      #ffe561 45%,
       #f6f2c0 50%,
-      #f6e27a 55%,
+      #ffe561 55%,
       #cb9b51 78%,
       #462523 100%);
   color: transparent;
   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite;
+  background-size: 250%;
+  background-position: left;
+}
+
+@keyframes shine {
+  to {
+    background-position: right
+  }
 }
 
 .site-description {
@@ -62,7 +72,7 @@ a {
   justify-content: space-between;
   width: fit-content;
   font-weight: lighter;
-  margin-top: 20px;  
+  margin-top: 20px;
 }
 
 .contact {
@@ -109,7 +119,7 @@ footer {
 
 @media only screen and (max-width: 768px) {
   .site-logo-link {
-    width: 80%;
+    width: 60%;
   }
 
   .site-title {
@@ -123,6 +133,6 @@ footer {
   .contact-info {
     width: 70%;
     flex-direction: column;
-    align-items: center;    
+    align-items: center;
   }
 }
